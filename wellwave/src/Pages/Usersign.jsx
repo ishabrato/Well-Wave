@@ -3,150 +3,151 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 import Form from 'react-bootstrap/Form';
-import './Login.css';
+import './main.css';
+
 function Usersign () {
   return (
-    <div className='field'>
+  <div className='field'>
     <div className='new'>
-    
-  <Form className='mb-3 col-auto form-group'>
-    <h2 className='heading1'>Log In</h2>
-<div className='firstName' >
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>First Name</Form.Label>
-      <Form.Control type="text" placeholder="Enter  your First  Name" />
-    </Form.Group>
-</div>
-
-<div className='middlename' >
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>Middle Name</Form.Label>
-      <Form.Control type="text" placeholder="Enter your middle Name" />
-    </Form.Group>
-</div>
-
-
-<div className='lastname' >
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>Last Name</Form.Label>
-      <Form.Control type="text" placeholder="Enter your Last  Name" />
-    </Form.Group>
-</div>
-
-
-<div className='dob'>
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>DOB</Form.Label>
-      <Form.Control type="date" placeholder="Enter your Date of Birth" />
-    </Form.Group>
-    
-</div>
+      <Form className='mb-3 col-auto form-group'>
+        <h2 className='heading1'>REGISTER AS PATIENT/GUARDIAN</h2>
+        <hr></hr>
+        <div className='row' >
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>First Name</Form.Label>
+              <Form.Control type="text" placeholder="First Name" required/>
+            </Form.Group>
+          </div>
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Middle Name</Form.Label>
+              <Form.Control type="text" placeholder="Middle Name" />
+            </Form.Group>
+          </div>
+          <div className='col-md-4' >
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Last Name</Form.Label>
+              <Form.Control type="text" placeholder="Last Name" required/>
+            </Form.Group>
+          </div>
+        </div>
 
 
-<div className='age'>
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Age</Form.Label>
-      <Form.Control type="number" placeholder="Enter your Date of Birth" disabled/>
-    </Form.Group>
-    
-</div>
-    
-<div className='email'>
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Email</Form.Label>
-      <Form.Control type="email" placeholder="Enter your valid email" />
-    </Form.Group>
-    
-</div>
+        <div className='row'>
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>DOB</Form.Label>
+              <Form.Control type="date" required/>
+            </Form.Group>
+          </div>
+          <div className='col-md-8'>
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" placeholder="Email" required/>
+            </Form.Group>
+          </div>
+        </div>
+        
+        
 
-<div className='secondheading'>
-    <h2>Address Details</h2>
-</div>
-<div className='address'>
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Address</Form.Label>
-      <Form.Control type="text" placeholder="Address" />
-    </Form.Group>
-    
-</div>
+        <div className='row'>
+          <div className="col-md-12">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Address Line</Form.Label>
+              <textarea className='form-control' rows={3} placeholder="Address Line" required></textarea>
+            </Form.Group>
+          </div>
+        </div>
 
-<div className='address'>
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>State</Form.Label>
-      <Form.Control type="text" placeholder="State" />
-    </Form.Group>
-    
-</div>
+        <div className='row'>
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Country</Form.Label>
+              <Form.Control type="text" placeholder="Country" required />
+            </Form.Group>
+          </div>
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>State</Form.Label>
+              <Form.Control type="text" placeholder="State" required />
+            </Form.Group>
+          </div>
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>City</Form.Label>
+              <Form.Control type="text" placeholder="City" required />
+            </Form.Group>
+          </div>
+        </div>
 
+        <div className='row'>
+          <div className="col-md-2">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Zip</Form.Label>
+              <Form.Control type="text" placeholder="zip" required/>
+            </Form.Group>
+          </div>
+          <div className="col-md-5">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Adhaar Id</Form.Label>
+              <Form.Control type="number" placeholder="ADHAR NUMBER"/>
+            </Form.Group>
+          </div>
+          <div className="col-md-5">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Pan Id</Form.Label>
+              <Form.Control type="number" placeholder="PAN-ID" />
+            </Form.Group>
+          </div>
+        </div>
 
+        <div className='row'>
+          <div className="col-md-6">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Voter Id</Form.Label>
+              <Form.Control type="number" placeholder="VOTER-ID" />
+            </Form.Group>
+          </div>
+          <div className="col-md-6">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Citizen Type</Form.Label>
+              <select className='form-control'>
+                <option>---SELECT---</option>
+                <option>INDIAN</option>
+                <option>OTHERS</option>
+              </select>
+            </Form.Group>
+          </div>
+        </div>
 
-<div className='city'>
-<Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>City</Form.Label>
-      <Form.Control type="text" placeholder="City" />
-    </Form.Group>
-</div>
+        <div className='row'>
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+          </div>
+          <div className="col-md-4">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Confirm Password</Form.Label>
+              <Form.Control type='password' placeholder='Confirm-Password'/>
+            </Form.Group>
+          </div>
+        </div>
 
-
-<div className='zip'>
-<Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Zip</Form.Label>
-      <Form.Control type="text" placeholder="zip" />
-    </Form.Group>
-</div>
-
-
-<div>
-    <h1>ID details</h1>
-
-
-    <div className='adhaar'>
-<Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Adhaar Id</Form.Label>
-      <Form.Control type="number" placeholder="Enter your adhaar card number" />
-    </Form.Group>
-</div>
-
-
-<div className='pan'>
-<Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Pan Id</Form.Label>
-      <Form.Control type="number" placeholder="Enter your pan id" />
-    </Form.Group>
-</div>
-
-<div className='voter'>
-<Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Label>Voter Id</Form.Label>
-      <Form.Control type="number" placeholder="Enter your voter id" />
-    </Form.Group>
-</div>
-
-</div>
-    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-      <h6 className='label1'>Don't have an account?Create your account
-     
-      <Link to = 'signUser'>Sign up</Link> 
-    
-
-   </h6>
-    </Form.Group>
-   
-    {/* <Button className='col-l-6 d-flex justify-content-center d-none d-lg-flex' variant="primary" type="submit">
-      SignUp
-    </Button> */}
-     
-                           
-                           
-    <Button className='btn1'  type="submit">
-      Submit
-    </Button>
-    
-  </Form>
+          <h6 className='label1'>Already have an account ? &nbsp;
+            <Link to = '/login'>Log-In</Link> 
+          </h6>           
+                              
+          <Button className='btn1'  type="submit">
+            Submit
+          </Button>
+        
+      </Form>
+    </div>
   </div>
-  </div> 
-   
-  )
+  );
 }
 
 export default Usersign
